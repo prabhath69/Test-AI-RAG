@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aster & Row Support</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Google Fonts for premium typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Aster & Row Support</h1>
+            <p>Your AI assistant for orders and policies</p>
+        </header>
+        <main class="chat-box" id="chat-box">
+            <div class="message assistant">
+                <div class="message-content">
+                    Hello! I'm the Aster & Row support assistant. How can I help you today?
+                </div>
+            </div>
+        </main>
+        <div class="loading-indicator" id="loading-indicator" style="display: none;">
+            <div class="spinner"></div><span>Thinking...</span>
+        </div>
+        <footer class="chat-input-area">
+            <form id="chat-form">
+                <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required>
+                <button type="submit" id="send-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+    
+    <!-- Simple markdown parser for client side (marked.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
